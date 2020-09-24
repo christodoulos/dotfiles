@@ -2,6 +2,13 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Limit number of lines and entries in the history. HISTFILESIZE controls the
+# history file on disk and HISTSIZE controls lines stored in memory.
+HISTSIZE=1000
+HISTFILESIZE=2000
+# Add a timestamp to each command.
+export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -15,9 +22,6 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
