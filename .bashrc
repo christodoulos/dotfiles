@@ -2,13 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Limit number of lines and entries in the history. HISTFILESIZE controls the
-# history file on disk and HISTSIZE controls lines stored in memory.
-HISTSIZE=1000
-HISTFILESIZE=2000
-# Add a timestamp to each command.
-export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -22,6 +15,9 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -120,14 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. $HOME/.asdf/asdf.sh
-
-export PATH=/home/christodoulos/.gem/ruby/2.7.0/bin:$PATH
-
-# WSL 2 specific settings.
-if grep -q "microsoft" /proc/version &>/dev/null; then
-    # Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
-    export DISPLAY="$(/sbin/ip route | awk '/default/ { print $3 }'):0"
-fi
-
-/usr/bin/xrdb -merge /home/christodoulos/.Xresources
+source .bashrc.mine
