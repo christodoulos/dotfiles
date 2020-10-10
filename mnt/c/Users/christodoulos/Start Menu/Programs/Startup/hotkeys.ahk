@@ -1,1 +1,13 @@
-/mnt/c/Users/chris/Start Menu/Programs/Startup/hotkeys.ahk
+sel := 0
+
+#if (sel=0)
+capslock::
+    send {lwin down}{Space}
+    sel := 1
+return 
+#if
+
+capslock up::
+    send {lwin up}
+    sel := 0
+return 
