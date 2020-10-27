@@ -1,8 +1,20 @@
+# Determine git branch.
+ parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+export PS1='\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\] \[[01;33m\]$(parse_git_branch)\[[00m\]\$ '
+
 export PATH=/home/christodoulos/.gem/ruby/2.7.0/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# reverse search, requires fzf, ripgrep and fzf.bash from fzf docs
+export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
+export FZF_DEFAULT_OPTS="--color=dark"
+[ -f "${HOME}/.fzf.bash" ] && source "${HOME}/.fzf.bash"
 
 #wsl2 x display
 if grep -q "microsoft" /proc/version &>/dev/null; then

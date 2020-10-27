@@ -116,4 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source .bashrc.mine
+source /home/christodoulos/.bashrc.mine
