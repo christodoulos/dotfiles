@@ -11,7 +11,7 @@ shopt -s histappend
 
 export PS1='\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\] \[[01;33m\]$(parse_git_branch)\[[00m\]\$ '
 
-export PATH=/home/christodoulos/.gem/ruby/2.7.0/bin:$PATH
+export PATH=/home/christodoulos/.gem/ruby/2.7.0/bin:/home/christodoulos/.local/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

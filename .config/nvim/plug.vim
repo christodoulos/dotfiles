@@ -113,7 +113,7 @@ Plug 'jiangmiao/auto-pairs'
 " comment plugin
 Plug 'scrooloose/nerdcommenter'
 " code auto-format plugin
-Plug 'sbdchd/neoformat'
+" Plug 'sbdchd/neoformat'
 " Code jump (go-to) plugin
 " Plug 'davidhalter/jedi-vim'
 " Multiple cursor editting plugin
@@ -121,10 +121,12 @@ Plug 'terryma/vim-multiple-cursors'
 " Highlight your yank aera
 Plug 'machakann/vim-highlightedyank'
 
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-"Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

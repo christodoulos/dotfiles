@@ -134,13 +134,13 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " neoformat "
 " """"""""" "
 
-let g:neoformat_enabled_yaml = ['prettier']
-let g:neoformat_enabled_python = ['black']
+"let g:neoformat_enabled_yaml = ['prettier']
+"let g:neoformat_enabled_python = ['black']
 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * Neoformat
-augroup END
+"augroup fmt
+"  autocmd!
+"  autocmd BufWritePre * Neoformat
+"augroup END
 
 " davidhalter/jedi-vim
 " disable autocompletion, cause we use deoplete for completion
@@ -152,6 +152,10 @@ let g:jedi#use_splits_not_buffers = "right"
 " set highlight duration time to 1000 ms, i.e., 1 second
 let g:highlightedyank_highlight_duration = 1000
 
+" """"""""""""""""""""""""" "
+" Prettier related settings "
+" """"""""""""""""""""""""" "
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 
 " """"""""""""""""""""""" "
