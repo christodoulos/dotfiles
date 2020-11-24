@@ -17,7 +17,7 @@ set completeopt=menuone,preview
 set cursorline
 " set directory=/tmp//,.
 set encoding=utf-8
-set expandtab smarttab
+" set expandtab smarttab
 set formatoptions=tcqrn1
 set hidden
 set hlsearch

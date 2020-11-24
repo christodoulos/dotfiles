@@ -26,7 +26,11 @@ Plug 'dhruvasagar/vim-zoom'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " Navigate and manipulate files in a tree view.
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+
+" Navigate and manipulate files in a tree view.
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-mapping-mark-children.vim'
 
 " Nerd commender
 Plug 'preservim/nerdcommenter'
@@ -35,7 +39,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-eunuch'
 
 " Launch Ranger from Vim.
-Plug 'francoiscabrol/ranger.vim'
+" Plug 'francoiscabrol/ranger.vim'
 
 " Run a diff on 2 directories.
 Plug 'will133/vim-dirdiff'

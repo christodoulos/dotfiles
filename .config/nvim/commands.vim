@@ -12,7 +12,7 @@ autocmd VimResized * wincmd =
 au FocusGained,BufEnter * :checktime
 
 " Unset paste on InsertLeave.
-autocmd InsertLeave * silent! set nopaste
+" autocmd InsertLeave * silent! set nopaste
 
 " Make sure all types of requirements.txt files get syntax highlighting.
 autocmd BufNewFile,BufRead requirements*.txt set syntax=python
