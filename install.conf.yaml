@@ -10,6 +10,8 @@
     ~/.profile: profile
     ~/.bashrc: bashrc
     ~/.bash_logout: bash_logout
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/statusline.vim: nvim/statusline.vim
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
