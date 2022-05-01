@@ -1,3 +1,4 @@
+![Actions Status](https://github.com/christodoulos/dotfiles/actions/workflows/test.yml/badge.svg?event=push)
 [![Powered by dotbot][dbshield]][dblink]
 
 [dblink]: https://github.com/anishathalye/dotbot
