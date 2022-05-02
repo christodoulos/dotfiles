@@ -74,6 +74,6 @@
   // other language specific settings
   "html.autoClosingTags": true,
   "prettier.proseWrap": "always",
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/home/chfrag/.local/bin/black"
 }
-
