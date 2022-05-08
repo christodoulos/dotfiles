@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Robomongo
+Exec=/usr/local/robo3t/bin/robo3t
+Icon=/home/chfrag/.icons/robo3t.ico
+
