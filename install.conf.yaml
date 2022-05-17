@@ -16,6 +16,8 @@
     ~/.config/nvim/statusline.vim: nvim/statusline.vim
     ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+    ~/.gemrc: gemrc
+    ~/.bundle/config: bundle/config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
